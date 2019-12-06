@@ -32,20 +32,18 @@ class Select_1:
         super().__init__()
 
     def run(self, data_list):
-        count = 0
         length = len(data_list)
         for i in range(length - 1):
-            print(data_list)  # 打印每一次选择后的结果
-            min_index = i  # 存储最小值的下标，以便最后交换
+            # 存储最小值的下标，以便最后交换
+            min_index = i
             for j in range(i + 1, length):
-                count += 1
                 if data_list[min_index] > data_list[j]:
                     min_index = j
-            if min_index != i:  # 说明需要交换，否则不需要自己自己交换
+            # 说明需要交换，否则不需要自己自己交换
+            if min_index != i:
                 tmp = data_list[i]
                 data_list[i] = data_list[min_index]
                 data_list[min_index] = tmp
-        print(f"总循环次数为 {count}")
         return data_list
 
 
@@ -55,37 +53,33 @@ class Select_2:
         super().__init__()
 
     def run(self, data_list):
-        count = 0
         length = len(data_list)
         for i in range(length - 1):
-            # print(data_list)  # 打印每一次选择后的结果
-            min_index = i  # 存储最小值的下标
-            max_index = length - i - 1  # 最大值的下标，以便最后交换
+            # 存储最小值的下标
+            min_index = i
+            # 最大值的下标，以便最后交换
+            max_index = length - i - 1
 
             for j in range(i + 1, length - i - 1):
-                count += 1
                 if data_list[min_index] > data_list[j]:
                     min_index = j
                 if data_list[max_index] < data_list[j]:
                     max_index = j
-
                 # 退出条件
             if min_index + 1 == max_index:
                 break
-
             # 前面的数据与最小值交换
-            if min_index != i:  # 说明需要交换，否则不需要自己自己交换
+            # 说明需要交换，否则不需要自己自己交换
+            if min_index != i:
                 tmp = data_list[i]
                 data_list[i] = data_list[min_index]
                 data_list[min_index] = tmp
-
             # 后面的数据与最大值交换
-            if max_index != length - i - 1:  # 说明需要交换，否则不需要自己与自己交换
+            # 说明需要交换，否则不需要自己与自己交换
+            if max_index != length - i - 1:
                 tmp = data_list[length - i - 1]
                 data_list[length - i - 1] = data_list[max_index]
                 data_list[max_index] = tmp
-
-        print(f"总循环次数为 {count}")
         return data_list
 
 

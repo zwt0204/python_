@@ -71,6 +71,32 @@ class Bubble_2:
         return data
 
 
-model = Bubble_2()
+class Bubble_3:
+    """
+    鸡尾酒排序:当一次从左到右之后，立马从右向左来一次排序比较
+    """
+
+    def __init__(self):
+        super().__init__()
+
+    def run(self, data):
+        length = len(data)
+        for i in range(length - 1):
+            flag = False
+            for j in range(length - i - 1):
+                if data[j] > data[j + 1]:
+                    data[j], data[j + 1] = data[j + 1], data[j]
+                    flag = True
+            if flag:
+                flag = False
+                for j in range(length - 2 - i, 0, -1):
+                    data[j], data[j - 1] = data[j - 1], data[j]
+                    flag = True
+            if not flag:
+                break
+        return data
+
+
+model = Bubble_3()
 a = model.run([3, 1, 2, 8, 7, 3, 2, 1, 0, 9, 0, 10, 60, 13, 56, 78])
 print(a)
