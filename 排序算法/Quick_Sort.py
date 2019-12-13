@@ -41,19 +41,21 @@ class Quick_2:
     def run(self, data, left, right):
         if left >= right:
             return data
+        # 记录基准值分割的下标
         stack = [left, right]
         while stack:
             low = stack.pop(0)
             high = stack.pop(0)
+            # 分割的小子集不能再分就退出表示已经排好序
             if high <= low:
                 continue
-            pivot = data[high]
+            pivot = data[low]  # if data[high]  stack.extend([low, i - 1, i + 1, high])
             i = low - 1
             for j in range(low, high+1):
-                if data[j] <= pivot:
+                if data[j] < pivot:
                     i += 1
                     data[i], data[j] = data[j], data[i]
-            stack.extend([low, i - 1, i + 1, high])
+            stack.extend([low, i, i + 2, high])
         return data
 
 
