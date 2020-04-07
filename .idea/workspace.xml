@@ -2,17 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4d927b49-530a-49c4-a27d-ee1e45316c52" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/LeetCode/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LeetCode/两数之和.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LeetCode/两数相加.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LeetCode/合并两个有序链表.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/numpy_/Broadcasting.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/numpy_/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/numpy_/basic_np.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/numpy_/op.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/numpy_/shape.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/numpy_/start_numpy.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/python_.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/python_.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pandas_/merge.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pandas_/pandas_start.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,46 +15,25 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/numpy_/start_numpy.py">
+        <entry file="file://$PROJECT_DIR$/pandas_/pandas_start.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="542">
-              <caret line="71" lean-forward="true" selection-start-line="71" selection-end-line="71" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/numpy_/op.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="542">
-              <caret line="89" lean-forward="true" selection-start-line="89" selection-end-line="89" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/numpy_/shape.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="503">
-              <caret line="35" column="45" selection-start-line="35" selection-start-column="45" selection-end-line="35" selection-end-column="45" />
+            <state relative-caret-position="244">
+              <caret line="104" selection-start-line="104" selection-end-line="104" />
+              <folding>
+                <element signature="e#177#195#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/numpy_/Broadcasting.py">
+        <entry file="file://$PROJECT_DIR$/pandas_/merge.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="936">
-              <caret line="136" selection-start-line="136" selection-end-line="136" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/numpy_/basic_np.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="702">
-              <caret line="36" selection-start-line="36" selection-end-line="36" />
+            <state relative-caret-position="407">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
+              <folding>
+                <element signature="e#125#144#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -84,6 +54,7 @@
       <find>ＳＱＬ</find>
       <find>，</find>
       <find>&gt;&gt; &gt;</find>
+      <find>...:</find>
     </findStrings>
     <replaceStrings>
       <replace>sql</replace>
@@ -130,14 +101,15 @@
         <option value="$PROJECT_DIR$/numpy_/shape.py" />
         <option value="$PROJECT_DIR$/numpy_/basic_np.py" />
         <option value="$PROJECT_DIR$/numpy_/Broadcasting.py" />
+        <option value="$PROJECT_DIR$/pandas_/pandas_start.py" />
+        <option value="$PROJECT_DIR$/pandas_/merge.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="42" />
-    <option name="y" value="114" />
-    <option name="width" value="2305" />
-    <option name="height" value="1116" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="-7" />
+    <option name="width" value="2574" />
+    <option name="height" value="1407" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -155,7 +127,7 @@
             <path>
               <item name="python_" type="b2602c69:ProjectViewProjectNode" />
               <item name="python_" type="462c0819:PsiDirectoryNode" />
-              <item name="numpy_" type="462c0819:PsiDirectoryNode" />
+              <item name="pandas_" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -190,7 +162,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Broadcasting">
+  <component name="RunManager" selected="Python.merge">
     <configuration name="Broadcasting" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="python_" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -233,7 +205,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="op" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="merge" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="python_" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -241,11 +213,32 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/numpy_" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pandas_" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/numpy_/op.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pandas_/merge.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pandas_start" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="python_" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pandas_" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pandas_/pandas_start.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -275,34 +268,13 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="start_numpy" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="python_" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/numpy_" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/numpy_/start_numpy.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.merge" />
+        <item itemvalue="Python.pandas_start" />
         <item itemvalue="Python.Broadcasting" />
         <item itemvalue="Python.basic_np" />
         <item itemvalue="Python.shape" />
-        <item itemvalue="Python.op" />
-        <item itemvalue="Python.start_numpy" />
       </list>
     </recent_temporary>
   </component>
@@ -320,23 +292,22 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="2576" height="1416" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="2576" height="1416" extended-state="7" />
     <layout>
       <window_info id="Alibaba Cloud Explorer" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.07992048" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.07992048" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Alibaba Cloud View" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.35569423" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.21294852" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.34633386" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.35335413" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.3096724" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="10" />
       <window_info anchor="right" id="Alibaba Function Compute" />
@@ -606,20 +577,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/numpy_/op.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="542">
-          <caret line="89" lean-forward="true" selection-start-line="89" selection-end-line="89" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/numpy_/shape.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="503">
-          <caret line="35" column="45" selection-start-line="35" selection-start-column="45" selection-end-line="35" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Continuum/anaconda3/envs/robot/Lib/site-packages/numpy/linalg/linalg.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1102">
@@ -636,7 +593,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/numpy_/basic_np.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="702">
+        <state relative-caret-position="1010">
           <caret line="36" selection-start-line="36" selection-end-line="36" />
         </state>
       </provider>
@@ -645,6 +602,47 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="936">
           <caret line="136" selection-start-line="136" selection-end-line="136" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/numpy_/shape.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="936">
+          <caret line="35" column="45" selection-start-line="35" selection-start-column="45" selection-end-line="35" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/numpy_/op.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1010">
+          <caret line="89" lean-forward="true" selection-start-line="89" selection-end-line="89" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Continuum/anaconda3/envs/robot/Lib/site-packages/pandas/core/generic.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="6110" column="54" lean-forward="true" selection-start-line="6110" selection-start-column="21" selection-end-line="6110" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pandas_/pandas_start.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="104" selection-start-line="104" selection-end-line="104" />
+          <folding>
+            <element signature="e#177#195#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pandas_/merge.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="407">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <element signature="e#125#144#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
