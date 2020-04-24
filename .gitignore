@@ -40,4 +40,4 @@ src/test_run2.py
 /log/
 test_run.py
 /test_cache/
-.idea
+*.idea
