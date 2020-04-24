@@ -102,3 +102,5 @@ b = df1.dropna(how='any')
 # 统计
 df.mean()
 
+g = ['1', '2']
+print(g.pop('1'))

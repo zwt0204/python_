@@ -1,0 +1,43 @@
+doc/*
+*.pyc
+*.log
+
+/target/
+!.mvn/wrapper/maven-wrapper.jar
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+.mvn
+.DS_Store
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+#*.xlsx
+mvnw*
+
+### NetBeans ###
+/nbproject/private/
+/build/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+.vscode/*
+.vscode
+
+src/debug.py
+src/test_run.py
+src/test_run2.py
+/log/
+test_run.py
+/test_cache/
+.idea
