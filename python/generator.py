@@ -43,6 +43,21 @@ def eater():
         print(food_list)
 
 
+class Foo:
+
+    def f1(self):
+        print('Foo.f1')
+
+    def f2(self):
+        print('Foo.f2')
+        self.f1()
+
+
+class Bar(Foo):
+    def f1(self):
+        print('Foo.f1')
+
+
 if __name__ == '__main__':
     # a = demo_range(1, 3)
     # print(a)
@@ -53,8 +68,10 @@ if __name__ == '__main__':
     # next(g)
     # a = g.send('hah')
     # print(a)
-    a = eater()
-    next(a)
-    a.send('hah')
+    # a = eater()
+    # next(a)
+    # a.send('hah')
     import sys
     # print(sys.modules)
+    b = Bar()
+    b.f2()
