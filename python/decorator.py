@@ -10,6 +10,13 @@ from datetime import datetime
 import time
 
 
+class demo:
+
+    def __init__(self):
+        self.name = 'hah'
+        self.value = '123'
+
+
 def timer(func):
     def wrapper(*args, **kwargs):
         start = datetime.now()
@@ -55,7 +62,8 @@ def memorize(duration=-1):
             # 运行函数
             result = function(*args, **kw)
             # 保存结果
-            r[key] = result
+            # r[key] = result
+            r.set(name=key, value=result)
             r.expire(key, duration)
             return result
 
@@ -64,15 +72,16 @@ def memorize(duration=-1):
 
 
 @memorize(3600)
-def a_test_f(a):
+def a_test_f():
     """一个需要缓存的函数"""
     print('get result')
     from time import sleep
     import random
     sleep(2)
-    return random.randint(a, 100)
+    demo.value = random.randint(1, 100)
+    return demo
 
 
 if __name__ == '__main__':
     # demo()
-    a_test_f(1)
+    a_test_f()
