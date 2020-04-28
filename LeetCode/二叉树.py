@@ -15,6 +15,8 @@ def traverse(root):
     traverse(root.right);
 """
 
+import math
+
 
 def plus_one(root):
     if root is None:
@@ -47,4 +49,102 @@ class Solution:
         if max is not None and root.val >= max.val:
             return False
         return self.isValidBST1(root.left, min, root) and self.isValidBST1(root.right, root, max)
+
+
+def is_in_bst(root, target):
+    if root is None:
+        return False
+    if root.val == target:
+        return True
+    return is_in_bst(root.left, target) or is_in_bst(root.right, target)
+
+
+def insert_data(root, val):
+    if root is None:
+        return val
+    if root.val < val:
+        root.right = insert_data(root.right, val)
+    if root.val > val:
+        root.left = insert_data(root.left, val)
+    return root
+
+
+def get_min(node):
+    while node.left is not None:
+        node = node.left
+    return node
+
+
+def del_data(root, key):
+    if root is None:
+        return None
+    if root.val == key:
+        if root.left is None:
+            return root.right
+        if root.right is None:
+            return root.left
+        minNode = get_min(root.right)
+        root.val = minNode.val
+        root.right = del_data(root.right, minNode.val)
+    elif root.val > key:
+        root.left = del_data(root.left, key)
+    elif root.val < key:
+        root.right = del_data(root.right, key)
+    return root
+
+
+# 计算节点数目
+
+
+def general_count_node(root):
+    if root is None:
+        return 0
+    return 1 + general_count_node(root.left) + general_count_node(root.right)
+
+
+def full_count_node(root):
+    h = 0
+    while root is not None:
+        root = root.left
+        h += 1
+    return math.pow(2, h) - 1
+
+
+def all_count_node(root):
+    l = r = root
+    hl = hr = 0
+    while l is not None:
+        l = l.left
+        hl += 1
+    while r is not None:
+        r = r.right
+        hr += 1
+    if hl == hr:
+        return math.pow(2, hl) - 1
+    return 1 + all_count_node(root.left) + all_count_node(root.right)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
