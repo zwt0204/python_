@@ -53,7 +53,7 @@ def min_window(s, t):
     valid = 0
     # 记录最小覆盖子串的起始索引及长度
     start = 0
-    leng = 100
+    leng = float("inf")
     while right < len(s):
         # c 是将移入窗口的字符
         c = s[right]
