@@ -8,21 +8,17 @@
 """
 """
 框架：
-int binarySearch(int[] nums, int target) {
-    int left = 0, right = ...;
-
-    while(...) {
-        int mid = left + (right - left) / 2;
-        if (nums[mid] == target) {
+def binarySearch(nums, target):
+    left = 0, right = 0
+    while(...):
+        mid = (right - left) // 2
+        if (nums[mid] == target):
             ...
-        } else if (nums[mid] < target) {
+        else if (nums[mid] < target):
             left = ...
-        } else if (nums[mid] > target) {
+        else if (nums[mid] > target):
             right = ...
-        }
-    }
-    return ...;
-}
+    return ...
 """
 
 
@@ -38,13 +34,6 @@ def binary_search(nums, target):
             left = mid - 1
         else:
             return mid
-
-        # if nums[mid] == target:
-        #     return mid
-        # elif nums[mid] < target:
-        #     left = mid + 1
-        # elif nums[mid] > target:
-        #     right = mid - 1
     return -1
 
 

@@ -40,19 +40,25 @@ import queue
 def min_depth(root):
     if root is None:
         return 0
+    # 先进先出的队列
     q = queue.Queue()
+    # 根节点放入[root]
     q.put(root)
     depth = 1
     while not q.empty():
         sz = q.qsize()
         for i in range(sz):
+            # 弹出并返回队列的头部
             cur = q.get()
             if cur.left is None and cur.right is None:
+                # 如果为单节点
                 return depth
 
             if cur.left is not None:
+                # 左节点放入对接
                 q.put(cur.left)
             if cur.right is not None:
+                # 右节点放入队列
                 q.put(cur.right)
         depth += 1
     return depth

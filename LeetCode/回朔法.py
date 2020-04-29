@@ -62,12 +62,12 @@ def put_position(n, queue, col):
 
 
 if __name__ == '__main__':
-    # arr = [1, 2, 3, 4]
-    # permutations(arr, 0, len(arr))
+    arr = [1, 2, 3, 4]
+    permutations(arr, 0, len(arr))
     # print(stdout)
 
     # 这里是n 就是n皇后
-    n = 8
-    # 存储皇后位置的一维数组，数组下标表示皇后所在的列，下标对应的值为皇后所在的行。
-    queue = [None for i in range(n)]
-    put_position(n, queue, 0)
+    # n = 8
+    # # 存储皇后位置的一维数组，数组下标表示皇后所在的列，下标对应的值为皇后所在的行。
+    # queue = [None for i in range(n)]
+    # put_position(n, queue, 0)

@@ -79,10 +79,12 @@ def del_data(root, key):
     if root is None:
         return None
     if root.val == key:
+        # 末端节点或者只有一个非空子节点
         if root.left is None:
             return root.right
         if root.right is None:
             return root.left
+        # 有两个子节点，为了不破坏性质需要调整，找到右子树中最小的节点
         minNode = get_min(root.right)
         root.val = minNode.val
         root.right = del_data(root.right, minNode.val)
@@ -93,10 +95,12 @@ def del_data(root, key):
     return root
 
 
-# 计算节点数目
-
-
 def general_count_node(root):
+    """
+    计算节点数目
+    :param root:
+    :return:
+    """
     if root is None:
         return 0
     return 1 + general_count_node(root.left) + general_count_node(root.right)

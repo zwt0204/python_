@@ -41,6 +41,7 @@ def detext_cycle(head):
 
 
 def find_k(head, k):
+    """链表的倒数第k个数"""
     slow = fast = head
     while k != 0:
         fast = fast.next
@@ -52,6 +53,7 @@ def find_k(head, k):
 
 
 def two_sum(nums, target):
+    """左右指针"""
     left = 0
     right = len(nums) - 1
     while left < right:
