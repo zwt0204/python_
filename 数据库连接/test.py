@@ -6,7 +6,7 @@
 @git   : 
 @Software: PyCharm
 """
-from mysql_pool import Mysql
+from .mysql_pool import Mysql
 
 # 申请资源
 mysql = Mysql()
