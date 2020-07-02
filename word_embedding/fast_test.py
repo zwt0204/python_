@@ -8,9 +8,29 @@
 """
 import fasttext
 
-model = fasttext.train_unsupervised('../data/test.txt', model='skipgram')
-model.save_model('../data/test.bin')
-print(model.words)
-print(model['words'])
+# model = fasttext.train_unsupervised('../data/test.txt', model='skipgram')
+# model.save_model('../data/test.bin')
+# print(model.words)
+# print(model['words'])
 
 # fasttext.load_model()
+
+# model = fasttext.train_supervised('../data/train.txt')
+# print(model.labels)
+# model.save_model('../data/fasttext.model.bin')
+
+classifier = fasttext.load_model("../data/fasttext.model.bin")
+
+result = classifier.test("../data/train.txt")
+print("准确率:", result)
+print("回归率:", result)
+print(classifier.predict('吃 上 一口 ， 香滑 细嫩 ， 美味 可口'))
+
+
+def print_results(N, p, r):
+    print("N\t" + str(N))
+    print("P@{}\t{:.3f}".format(1, p))
+    print("R@{}\t{:.3f}".format(1, r))
+
+
+print_results(*result)
