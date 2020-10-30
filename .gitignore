@@ -42,3 +42,4 @@ test_run.py
 /test_cache/
 *.idea
 /data/
+/.idea/
