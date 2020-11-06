@@ -19,7 +19,7 @@ _logger = logging.getLogger()
 
 class DataObject(object):
 
-    def __init__(self, session_id, data=''):
+    def __init__(self, session_id, data=""):
         super(DataObject, self).__init__()
         ss_id = session_id or ''
         self.session_id = 'session:' + str(ss_id)
@@ -73,6 +73,7 @@ class DataObject(object):
         """
         if json_loads:
             data = json.loads(data)
+        self.data = data
 
     def save(self):
         """保存"""

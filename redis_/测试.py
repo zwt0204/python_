@@ -8,6 +8,7 @@
 """
 import redis
 from redis_.cache.data_object import DataObject
+import json
 
 
 def get_session(session_id):
@@ -20,10 +21,12 @@ def add_data(sess, data):
     sess.data = data
 
 
-sess = get_session('')
-add_data(sess, '你好')
-sess.save()
-
+sess = get_session('d324d23a1a9611eb8a7d70b5e8a3a45b')
+print(sess)
+# add_data(sess, '你好')
+# sess.save()
+print(str(sess.data, encoding='utf8'))
+print(json.loads(str(sess.data, encoding='utf8')))
 
 
 
