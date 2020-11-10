@@ -6,6 +6,9 @@
 @time: 2020/10/30 16:37
 @desc: 
 """
+import redis
+
+
 EXPIRE_TIME = 10 * 60 * 60
 IF_CACHE = True
 
@@ -17,3 +20,5 @@ REDIS_DB = {
     'max_connections': 10,
     'socket_connect_timeout': 0.5,
 }
+
+redis_pool = redis.ConnectionPool(**REDIS_DB)

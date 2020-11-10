@@ -6,7 +6,6 @@
 @time: 2020/10/30 16:06
 @desc: 
 """
-import redis
 from redis_.cache.data_object import DataObject
 import json
 

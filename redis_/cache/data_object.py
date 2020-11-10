@@ -10,10 +10,9 @@ import json
 import uuid
 from redis import Redis
 import logging
-import redis
-from .config import REDIS_DB
+from .config import redis_pool
 from ..utils import DataEncoder
-redis_pool = redis.ConnectionPool(**REDIS_DB)
+
 _logger = logging.getLogger()
 
 
