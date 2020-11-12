@@ -96,7 +96,6 @@ class KnowledgeQAModel(ElasticModel):
             self.es.delete_by_query(index, body=body)
             bulk_list = []
             for dt in insert_list:
-                # self.es.index(index, dt)
                 bulk_list.append({'index': {}})
                 bulk_list.append(dt)
             self.es.bulk(bulk_list, index=index)

@@ -8,15 +8,9 @@
 """
 import traceback
 import logging
-from elasticsearch import Elasticsearch, exceptions
+from elasticsearch import exceptions
 from copy import deepcopy
-
-ELASTICSEARCH_DATABASES = {
-    'hosts': [{'host': '52.80.169.157', 'port': '9200'},
-              {'host': '52.81.8.239', 'port': '9200'}],
-    'index': 'graphstore',
-}
-es = Elasticsearch(**ELASTICSEARCH_DATABASES)
+from .config import es
 
 _logger = logging.getLogger()
 
